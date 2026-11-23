@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>אימון גיטרה</title>
+<title>Simple Practice</title>
 <meta name="description" content="תוכנית אימון אישית לגיטרה: בוחרים תרגילים, מחלקים זמן, מפעילים טיימר ועוקבים אחרי שירים. בלי הרשמה, הכל נשמר אצלכם.">
 <meta name="theme-color" content="#2A1A10">
 <link rel="manifest" href="manifest.webmanifest">
@@ -11,9 +11,9 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="אימון גיטרה">
+<meta name="apple-mobile-web-app-title" content="Simple Practice">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta property="og:title" content="אימון גיטרה – תוכנית אימון אישית">
+<meta property="og:title" content="Simple Practice – תוכנית אימון אישית לגיטרה">
 <meta property="og:description" content="בוחרים תרגילים, מחלקים זמן ומתאמנים עם טיימר. בלי הרשמה, הכל נשמר אצלכם במכשיר.">
 <meta property="og:image" content="og.jpg">
 <meta property="og:type" content="website">
@@ -306,6 +306,9 @@ h2{font-size:20px;font-weight:700;letter-spacing:-.01em}
 .foot{padding:16px 18px;display:flex;flex-direction:column;gap:10px}
 .foot p{margin:0;font-size:13.5px;color:var(--muted)}
 .foot .row{flex-wrap:wrap;gap:8px}
+.brand{display:flex;align-items:center;gap:8px;direction:ltr;justify-content:flex-end;letter-spacing:-.025em}
+.brand img{height:54px;width:auto;filter:drop-shadow(0 3px 5px rgba(60,20,10,.3))}
+@media (max-width:600px){ .brand{font-size:23px} .brand img{height:46px} }
 </style>
 </head>
 <body>
@@ -340,7 +343,7 @@ h2{font-size:20px;font-weight:700;letter-spacing:-.01em}
         <div class="center"><div><span class="num" id="doneMin">0</span><span class="unit">דקות</span></div></div>
       </div>
       <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
-        <h1 id="h-main">אימון גיטרה</h1>
+        <h1 id="h-main" class="brand"><img src="logo.png" alt="" width="30" height="54"><span>Simple Practice</span></h1>
         <div class="date" id="date"></div>
         <div class="stat" id="stat"></div>
       </div>
